@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Intelligent Tutor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}" />
+</head>
+<body>
+    <section class="background firstSection" id="home">
+</section> 
+<div id="leftcolumn">
+<div id="speechContainer">
+    <h1>Upload your Speech</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file"/>
+        <br>
+        <input type="submit" id="submitButton" value="Evaluate"/>
+    </form>
+
+    {% if transcript != "" %}
+        <div id="speechTranscriptContainer">
+            <h1>Transcript</h1>
+            <p id="speechText">{{ transcript }}</p>
+        </div>
+    {% endif %}
+
+    
+    {% if result != "" %}
+    <div id="speechTranscriptContainer">
+        <h1>Corrected speech</h1>
+        <p id="speechText">{{ result }}</p>
+    </div>
+    {% endif %}
+    
+    {% if l != "" %}
+    <div id="speechTranscriptContainer">
+        <h1>Mistakes Corrected</h1>
+        <p id="speechText">{{ l }}</p>
+    </div>
+    {% endif %}
+
+    
+    {% if mis != 0 %}
+    <div id="speechTranscriptContainer">
+        <h1>Number of mistakes</h1>
+        <p id="speechText">{{ mis }}</p>
+    </div>
+    {% endif %}
+</div>
+</div>
+
+</body>
+
+<footer>
+    <p>Intelligent Tutor by RIDDHI and KANISHTA</p>
+</footer>
+</html>

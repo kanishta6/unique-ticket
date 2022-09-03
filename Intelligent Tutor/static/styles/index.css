@@ -1,0 +1,68 @@
+h1, p, input {
+    font-family: 'Lato', sans-serif;
+}
+
+#speechContainer {
+    margin: 20px;
+}
+
+#submitButton {
+    background-color: #0191FE;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+}
+
+#speechTranscriptContainer {
+    margin-top: 20px;
+}
+
+#speechText {
+    font-size: 18px;
+    width: 500px;
+}
+.background{
+    background: rgba(0, 0, 0, 0.7) url('https://fluencycorp.com/wp-content/uploads/2019/01/hardest-part-learning-english.jpg');
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+
+.firstSection{
+    height: 70vh;
+    color:white;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #1F395E ;
+    color: #fff;
+}
+.leftcolumn {
+    float: left;
+    width: 50%;
+    background-color:#1F395E ;
+    }
+
+.rightcolumn {
+    float: left;
+    width: 50%;
+    background-color:#1F395E ;
+    padding-left: 20px;
+}
